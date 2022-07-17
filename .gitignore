@@ -31,3 +31,5 @@ var/
 .cache/
 .lsp-session*
 gotools/
+org-roam.db
+.org-roam-id-locations
