@@ -43,10 +43,8 @@
 (bind-key "C-c n c" #'org-roam-capture)
 (bind-key "C-c n i" #'org-roam-node-insert)
 
-
 (use-package sis
   :demand t
-  :bind ("C-<f9>" . sis-switch)
   :config
   (sis-ism-lazyman-config "1" "2" 'fcitx)
   (sis-global-respect-mode t)
