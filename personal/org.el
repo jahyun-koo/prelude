@@ -1,6 +1,6 @@
 (require 'package)
 
-(prelude-require-packages '(use-package org-roam ox-hugo))
+(prelude-require-packages '(use-package org-roam ox-hugo sis))
 
 (define-key prelude-mode-map (kbd "C-c n") nil)
 (use-package org-roam
@@ -42,3 +42,15 @@
 (bind-key "C-c n f" #'org-roam-node-find)
 (bind-key "C-c n c" #'org-roam-capture)
 (bind-key "C-c n i" #'org-roam-node-insert)
+
+
+(use-package sis
+  :demand t
+  :bind ("C-<f9>" . sis-switch)
+  :config
+  (sis-ism-lazyman-config "1" "2" 'fcitx)
+  (sis-global-respect-mode t)
+  (sis-global-cursor-color-mode t)
+  (sis-global-context-mode t)
+  (sis-global-inline-mode t)
+  )
