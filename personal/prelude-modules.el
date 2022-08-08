@@ -35,7 +35,7 @@
 ;; Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301, USA.
 
-;;; Code:
+;; Code:
 
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
 
@@ -52,7 +52,7 @@
 ;;; Vim emulation
 ;;
 ;; Enable this module if you're fond of vim's keybindings.
-;; (require 'prelude-evil)
+(require 'prelude-evil)
 
 ;;; Org-mode (a legendary productivity tool that deserves its own category)
 ;;
@@ -78,8 +78,8 @@
 ;; (require 'prelude-haskell)
 (require 'prelude-js)
 ;; (require 'prelude-latex)
-(require 'prelude-lisp) ;; Common setup for Lisp-like languages
-;; (require 'prelude-literate-programming) ;; Setup for Literate Programming
+(require 'prelude-lisp) ;; common setup for lisp-like languages
+(require 'prelude-literate-programming) ;; Setup for Literate Programming
 (require 'prelude-lsp) ;; Base setup for the Language Server Protocol
 ;; (require 'prelude-lua)
 ;; (require 'prelude-ocaml)

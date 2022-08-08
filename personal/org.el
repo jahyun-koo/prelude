@@ -2,6 +2,8 @@
 
 (prelude-require-packages '(use-package org-roam ox-hugo sis))
 
+(setq org-return-follows-link t)
+
 (define-key prelude-mode-map (kbd "C-c n") nil)
 (use-package org-roam
   :after org
@@ -11,6 +13,7 @@
         org-roam-directory (file-truename "~/org/roam")
         org-roam-completion-everywhere t
         org-roam-db-autosync-mode t)
+
   :config
   (org-roam-db-autosync-mode)
   (setq org-roam-capture-templates
