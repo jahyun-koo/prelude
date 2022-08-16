@@ -55,3 +55,18 @@
   (sis-global-context-mode t)
   (sis-global-inline-mode t)
   )
+
+
+(use-package evil
+  :ensure t
+  :init
+  (setq evil-want-C-u-scroll t)
+
+  (when evil-want-C-u-scroll
+    (define-key evil-insert-state-map (kbd "C-u") 'evil-scroll-up)
+    (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
+    (define-key evil-visual-state-map (kbd "C-u") 'evil-scroll-up)
+    (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up))
+
+  :config
+  (evil-mode 1))
